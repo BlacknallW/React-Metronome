@@ -10,6 +10,10 @@
     margin: 10px;
 }
 
+#title-customizer {
+    color: white;
+}
+
 .metronome button {
     background: #c94d46;
     padding: 10px;
@@ -18,4 +22,8 @@
     width: 100px;
     color: #fff;
     font-size: 18px;
+}
+
+#slider-box {
+    background-color: rgba(65, 114, 163, .6);
 }

@@ -78,21 +78,20 @@ class Metronome extends React.Component {
   render() {
     const { playing, bpm } = this.state;
     return (
-      <div className="section box">
+      <div className="section box" id="slider-box">
               <div className="metronome">
                 <div className="bpm-slider">
-                  <div className="title">{bpm} BPM</div>
+                  <div className="title" id="title-customizer">{bpm} BPM</div>
                   <input
                     type="range"
                     min="60"
                     max="240"
                     value={bpm}
                     onChange={this.handleBpmChange}
-                    className="slider is-fullwidth is-large is-danger is-circle"
                   />
                 </div>
                 <div className="tile is-child">
-                <button onClick={this.startStop} className="button is-success">
+                <button onClick={this.startStop} className="button is-link">
                   {playing ? "Stop" : "Start"}
                 </button>
                 </div>
